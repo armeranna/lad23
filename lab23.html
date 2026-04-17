@@ -1,9 +1,31 @@
-   <h1>Моя страница</h1>
+ <header class="header">
+	 <h1>Моя страница</h1>
  </header>
+<main>
+		<selection class="cards">
+			<!--карточки-->
+			<div class="card">
+				<h3>Карточка 1</h3>
+				<p>Описание</p>
+			</div>
+			<div class="card">
+				<h3>Карточка 2</h3>
+				<p>Описание</p>
+			</div>
+			<div class="card">
+				<h3>Карточка 3</h3>
+				<p>Описание</p>
+			</div>
+		</selection>
+</main>
+<footer>
+  <p>Контакты</p>
+</footer>
 <link rel="stylesheet" href="styles.css"
-	body {
+body {
 	font-family: Arial;
-	background-color: #d28dd9
+	background-color: #d28dd9;
+	margin: 0;
 	}
 h1 {
 color: darkblue;
@@ -13,8 +35,32 @@ selection {
 background-color: white;
 pedding : 10px;
 }
+.cards {
+	display: flex;
+	gap: 20px;
+	}
 .card {
-border:
+	flex:1 
+	border: 1px solid gray;
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 8px;
+	}
+.footer {
+	background-color: #222;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	}
+.box {
+	position: relative;
+	top: 10px;
+	left: 20px;
+	}
+.container {
+.item{
+	display:
  <main>
      <section>
 	<h2>Обо мне</h2>
@@ -34,9 +80,6 @@ border:
 
 </main>
 
-<footer>
-  <p>Контакты</p>
-</footer>
 <style>
 p {
   color: red;
